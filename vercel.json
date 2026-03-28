@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/post-(.*)",
+      "destination": "/blog/post-$1",
+      "permanent": true
+    }
+  ]
 }

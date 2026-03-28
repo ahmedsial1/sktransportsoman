@@ -272,9 +272,24 @@ const translations = {
         serv_parts_hub_title: "SPARE PARTS HUB",
         serv_parts_hub_desc: "Dedicated warehouse support for SANY, Hyundai, and Kia equipment to minimize maintenance delays.",
         form_success: "Thank you! Your inquiry has been sent to our HQ. We will contact you shortly.",
-        form_error: "Submission Error! Please try sending your inquiry directly via <a href='https://wa.me/96891929375' style='color:inherit; text-decoration:underline;'>WhatsApp (+968 9192 9375)</a> for immediate assistance."
+        form_error: "Submission Error! Please try sending your inquiry directly via <a href='https://wa.me/96891929375' style='color:inherit; text-decoration:underline;'>WhatsApp (+968 9192 9375)</a> for immediate assistance.",
+        
+        blog_title_1: "Best Crane Rental Muscat Oman 2026: 20-100 Ton Capacity | SK Transports",
+        blog_excerpt_1: "The definitive guide to eradicating project delays in Muscat. Discover why our PDO-approved 20T - 100T SANY fleet is the ultimate lifting force.",
+        blog_title_2: "50 Ton Sany Crane for Rent in Muscat: PDO Approved | Daily/Weekly Rates",
+        blog_excerpt_2: "Struggling with medium-duty lifting? Learn how our highly reliable 50-ton SANY truck and rough terrain cranes eliminate downtime constraints.",
+        blog_title_3: "Mobile Crane Rental Muscat: Rough Terrain & Truck Mounted | SK Transports",
+        blog_excerpt_3: "Paved highways or deep desert oilfields? We break down the absolute critical differences between hiring a Truck vs. Rough Terrain crane in Oman.",
+        blog_title_4: "Sany Cranes Sales Oman: New/Used 25-200 Ton Models Available",
+        blog_excerpt_4: "Direct sourcing from China factory outlets for used and new heavy equipment procurement. CEO personally manages shipping and customs.",
+        blog_title_5: "PDO Crane Services Muscat: Oil & Gas Approved Heavy Lifting",
+        blog_excerpt_5: "Specialized oilfield lifting solutions. 100% PDO safety compliant fleet with certified operators for high-security energy zones.",
+        blog_hero_tagline: "Insights & Case Studies",
+        blog_hero_title: "The SK Transports <span>Blog.</span>",
+        blog_hero_desc: "Latest news, heavy lifting best practices, and expert advice for dominating Oman's infrastructure and energy sectors with SANY cranes.",
+        read_more_btn: "Read Full Article"
     },
-    ar: {
+ar: {
         nav_home: "الرئيسية",
         ticker_text: "اسطول ساني معتمد من شركة تنمية نفط عمان | 18 فرعاً في عمان | استيراد مباشر من المصانع الصينية (معدات مستعملة وجديدة) | دعم فني على مدار الساعة",
         nav_fleet: "الأسطول",
@@ -503,7 +518,22 @@ const translations = {
         serv_parts_hub_title: "مركز قطع الغيار",
         serv_parts_hub_desc: "دعم مستودع مخصص لمعدات ساني وهيونداي وكيا لتقليل تأخيرات الصيانة.",
         form_success: "شكراً لك! تم إرسال استفسارك إلى مقرنا الرئيسي. سنتصل بك قريباً.",
-        form_error: "خطأ في الإرسال! يرجى محاولة إرسال استفسارك مباشرة عبر <a href='https://wa.me/96891929375' style='color:inherit; text-decoration:underline;'>واتساب (+968 9192 9375)</a> للمساعدة الفورية."
+        form_error: "خطأ في الإرسال! يرجى محاولة إرسال استفسارك مباشرة عبر <a href='https://wa.me/96891929375' style='color:inherit; text-decoration:underline;'>واتساب (+968 9192 9375)</a> للمساعدة الفورية.",
+        
+        blog_title_1: "أفضل تأجير کرينات في مسقط عمان 2026: سعة 20-100 طن | إس كيه للنقليات",
+        blog_excerpt_1: "الدليل النهائي للقضاء على تأخيرات المشاريع في مسقط. اكتشف لماذا يعتبر أسطول ساني المعتمد من PDO هو القوة القصوى.",
+        blog_title_2: "رافعة ساني 50 طن للإيجار في مسقط: معتمدة من PDO | أسعار يومية وأسبوعية",
+        blog_excerpt_2: "هل تعاني من قيود الرفع متوسطة الأحمال؟ تعرف على كيف تقضي رافعاتنا ساني 50 طن على قيود التوقف.",
+        blog_title_3: "تأجير الرافعات المتنقلة مسقط: تضاريس وعرة وشاحنات | إس كيه للنقليات",
+        blog_excerpt_3: "طرق سريعة أم حقول نفط صحراوية؟ نوضح الاختلافات الجوهرية بين استئجار رافعة شاحنة مقابل رافعة تضاريس وعرة.",
+        blog_title_4: "مبيعات رافعات ساني عمان: موديلات 25-200 طن جديدة ومستعملة",
+        blog_excerpt_4: "توريد مباشر من المصانع الصينية للمعدات الثقيلة. يشرف الرئيس التنفيذي شخصياً على الشحن والجمارك.",
+        blog_title_5: "خدمات رافعات PDO مسقط: رفع ثقيل معتمد لقطاع النفط والغاز",
+        blog_excerpt_5: "حلول رفع متخصصة لحقول النفط. أسطول متوافق بنسبة 100% مع معايير سلامة PDO مع مشغلين معتمدين.",
+        blog_hero_tagline: "رؤى ودراسات حالة",
+        blog_hero_title: "مدونة <span>إس كيه للنقليات.</span>",
+        blog_hero_desc: "آخر الأخبار، وأفضل ممارسات الرفع الثقيل، ونصائح الخبراء للسيطرة على قطاعات البنية التحتية والطاقة في عُمان باستخدام رافعات ساني.",
+        read_more_btn: "اقرأ المقال كاملاً"
     },
     zh: {
         nav_home: "首页",
@@ -733,7 +763,22 @@ const translations = {
         serv_parts_hub_title: "备件中心",
         serv_parts_hub_desc: "为三一、现代和起亚设备提供专门的仓库支持，以将维护延迟降至最低。",
         form_success: "谢谢！您的咨询已发送至我们的总部。我们将很快与您联系。",
-        form_error: "提交错误！请尝试通过 <a href='https://wa.me/96891929375' style='color:inherit; text-decoration:underline;'>WhatsApp (+968 9192 9375)</a> 直接发送您的询问，以便获得即时反馈。"
+        form_error: "提交错误！请尝试通过 <a href='https://wa.me/96891929375' style='color:inherit; text-decoration:underline;'>WhatsApp (+968 9192 9375)</a> 直接发送您的询问，以便获得即时反馈。",
+        
+        blog_title_1: "2026年阿曼马斯喀特最佳起重机租赁：20-100 吨载荷 | SK Transports",
+        blog_excerpt_1: "消除马斯喀特项目延误的最终指南。了解为什么我们获得 PDO 认证的 20T-100T 三一车队是核心起重力量。",
+        blog_title_2: "马斯喀特 50 吨三一起重机租赁：PDO 认证 | 日租/周租费率",
+        blog_excerpt_2: "正在为中型吊装发愁？了解我们高度可靠的三一 50 吨汽车和越野起重机如何消除停机限制。",
+        blog_title_3: "马斯喀特移动式起重机租赁：越野型与车载型 | SK Transports",
+        blog_excerpt_3: "公路作业还是沙漠油田？我们为您详细解析在阿曼租用汽车起重机与越野起重机的关键区别。",
+        blog_title_4: "阿曼三一起重机销售：现货 25-200 吨全新/二手型号",
+        blog_excerpt_4: "直接从中国工厂采购二手及全新重型设备。CEO 亲自管理航运和海关事务。",
+        blog_title_5: "马斯喀特 PDO 起重机服务：油气行业认证重型吊装",
+        blog_excerpt_5: "专业油田起重解决方案。100% 符合 PDO 安全标准的车队，配备持有能源区准入证的操作员。",
+        blog_hero_tagline: "见解与案例研究",
+        blog_hero_title: "SK Transports <span> 博客。</span>",
+        blog_hero_desc: "了解最新新闻、重型起重最佳实践以及在阿曼基础设施和能源领域使用三一 (SANY) 起重机的专家建议。",
+        read_more_btn: "阅读全文"
     },
 };
 

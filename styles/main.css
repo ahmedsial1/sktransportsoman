@@ -163,6 +163,25 @@ body.rtl {
     direction: rtl;
 }
 
+/* --- Multi-Language Content Visibility --- */
+/* Hide all language-specific content by default */
+[data-show-lang] {
+    display: none !important;
+}
+
+/* Show content matching the current HTML lang attribute */
+html[lang="en"] [data-show-lang="en"] {
+    display: block !important;
+}
+
+html[lang="ar"] [data-show-lang="ar"] {
+    display: block !important;
+}
+
+html[lang="zh"] [data-show-lang="zh"] {
+    display: block !important;
+}
+
 /* --- RTL Sequence Fix --- */
 body.rtl [data-i18n^="phone_"],
 body.rtl [data-i18n^="ton_"],
