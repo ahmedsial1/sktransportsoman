@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDUSTRIAL SERVICES | SK Transports - Oil & Gas & Heavy Infrastructure</title>
+    <meta name="description"
+        content="Professional heavy lifting, industrial procurement, and site logistics services in Oman. PDO-approved safety standards and direct China sourcing nodes.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Top Ticker Bar -->
+    <div class="top-ticker">
+        <div class="ticker-content">
+            <div class="ticker-item" data-i18n="ticker_text">PDO Approved SANY Fleet | 18+ Years of Expertise | Direct
+                Sourcing from China | 24/7 Technical Support in Muscat, Sohar, Duqm & Salalah</div>
+            <div class="ticker-item" data-i18n="ticker_text">PDO Approved SANY Fleet | 18+ Years of Expertise | Direct
+                Sourcing from China | 24/7 Technical Support in Muscat, Sohar, Duqm & Salalah</div>
+        </div>
+    </div>
+
+    <nav id="main-nav">
+        <a href="index.html" class="logo"><img src="assets/logo.png" alt="SK TRANSPORTS"></a>
+        <!-- Mobile Burger -->
+        <div class="mobile-burger" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="fleet.html" data-i18n="nav_fleet">Fleet</a></li>
+            <li><a href="services.html" class="active" data-i18n="nav_services">Services</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+            <li><a href="contact-us.html" data-i18n="nav_contact">Contact Us</a></li>
+        </ul>
+        <div class="lang-selector-container">
+            <button class="lang-selector-btn" onclick="toggleLangMenu()">
+                <span id="active-flag">🇬🇧 EN</span>
+            </button>
+            <div class="lang-dropdown-content">
+                <a href="javascript:void(0)" onclick="setLanguage('en')">English (EN)</a>
+                <a href="javascript:void(0)" onclick="setLanguage('ar')">Arabic (AR)</a>
+                <a href="javascript:void(0)" onclick="setLanguage('zh')">Chinese (ZH)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Redesigned Hero -->
+    <header class="hero">
+        <div class="hero-visual">
+            <img src="assets/warehouse.png" alt="SK Transports Services">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tagline" data-i18n="serv_hero_tagline">Technical Lifting Excellence</span>
+            <h1 class="hero-title" data-i18n="serv_hero_title">Powering Oman's <span>Heavy Industries.</span></h1>
+            <p style="color: var(--text-dim); max-width: 800px; margin: 20px auto;" data-i18n="serv_hero_desc">From
+                complex Oil & Gas operations to direct global equipment sourcing, SK
+                Transports provides the technical backbone for the Sultanate's most ambitious projects.</p>
+            <div class="hero-cta" style="margin-top: 40px;">
+                <a href="contact-us.html" class="btn-premium" data-i18n="btn_quote">Consult
+                    an Engineer</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Services Grid -->
+    <section class="section">
+        <div class="container" style="max-width: 1400px; margin: 0 auto; text-align: center;">
+            <span class="hero-tagline" data-i18n="serv_core_tag">OUR EXPERTISE</span>
+            <h2 style="font-size: 3.5rem; margin-bottom: 60px;" data-i18n="serv_core_title">Core <span>Service
+                    Sectors.</span></h2>
+
+            <div class="grid-3"
+                style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px;">
+                <!-- Solution 1 -->
+                <div class="glass-card">
+                    <div style="font-size: 3rem; color: var(--primary); margin-bottom: 25px;"><i
+                            class="fa-solid fa-truck-moving"></i></div>
+                    <h3 data-i18n="serv_lifting_title" style="font-size: 1.5rem; margin-bottom: 20px;">Heavy Lifting
+                        Solutions</h3>
+                    <p data-i18n="serv_lifting_desc" style="font-size: 0.95rem; color: var(--text-dim);">Commanding the
+                        Sultanate's most advanced SANY fleet for precision lifts up to 350 tons. Fully PDO-certified
+                        operators and equipment for high-risk environments.</p>
+                </div>
+                <!-- Solution 2 -->
+                <div class="glass-card">
+                    <div style="font-size: 3rem; color: var(--secondary); margin-bottom: 25px;"><i
+                            class="fa-solid fa-warehouse"></i></div>
+                    <h3 data-i18n="serv_procurement_title" style="font-size: 1.5rem; margin-bottom: 20px;">Industrial
+                        Procurement</h3>
+                    <p data-i18n="serv_procurement_desc" style="font-size: 0.95rem; color: var(--text-dim);">
+                        Direct-from-factory sourcing for all used and new machines from China. We bridge the gap between
+                        global manufacturing and Omani infrastructure needs.</p>
+                </div>
+                <!-- Solution 3 -->
+                <div class="glass-card">
+                    <div style="font-size: 3rem; color: var(--accent); margin-bottom: 25px;"><i
+                            class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3 data-i18n="serv_support_title" style="font-size: 1.5rem; margin-bottom: 20px;">Technical Support
+                    </h3>
+                    <p data-i18n="serv_support_desc" style="font-size: 0.95rem; color: var(--text-dim);">24/7 rapid
+                        deployment via our 18+ branches. Our taskforce ensures minimal downtime and maximum operational
+                        efficiency on-site.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Workflow -->
+    <section class="section" style="background: rgba(15, 23, 42, 0.4);">
+        <div class="container" style="max-width: 1400px; margin: 0 auto; text-align: center;">
+            <span class="hero-tagline" data-i18n="process_tag">OUR WORKFLOW</span>
+            <h2 style="font-size: 3.5rem; margin-bottom: 60px;" data-i18n="process_title">Engineered for
+                <span>Efficiency.</span>
+            </h2>
+
+            <div class="process-steps">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <h4 data-i18n="step1_title">Consultation</h4>
+                    <p data-i18n="step1_desc">Deep analysis of site requirements and load charts.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <h4 data-i18n="step2_title">Site Survey</h4>
+                    <p data-i18n="step2_desc">On-site risk assessment by our safety supervisors.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <h4 data-i18n="step3_title">Lift Planning</h4>
+                    <p data-i18n="step3_desc">Rigorous engineering calculations and equipment selection.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">04</div>
+                    <h4 data-i18n="step4_title">Execution</h4>
+                    <p data-i18n="step4_desc">Precision operation under global safety protocols.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Feature Card (China Bridge) -->
+    <section class="section">
+        <div class="container" style="max-width: 1400px; margin: 0 auto;">
+            <div class="featured-service-card">
+                <div class="featured-content">
+                    <h2 data-i18n="china_special_title">The <span>China-Oman</span> Bridge</h2>
+                    <p data-i18n="china_special_desc" style="font-size: 1.1rem; color: var(--text-dim);">Our unique
+                        advantage lies in our direct factory-to-site sourcing from China. We don't just rent
+                        machines; we facilitate the entire lifecycle of industrial equipment procurement, including new
+                        and used machinery.</p>
+                    <a href="contact-us.html" class="btn-premium" style="margin-top: 30px;"
+                        data-i18n="btn_quote">Inquire for Procurement</a>
+                </div>
+                <div class="featured-visual">
+                    <img src="assets/china.png" alt="China Sourcing Nodes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section class="section">
+        <div class="container" style="max-width: 1100px; margin: 0 auto; text-align: center;">
+            <div class="glass-card safety-card" style="border-top: 5px solid var(--primary);">
+                <div style="font-size: 4rem; color: var(--primary); margin-bottom: 30px;"><i
+                        class="fas fa-shield-alt"></i></div>
+                <h2 data-i18n="safety_title" style="font-size: 3rem; margin-bottom: 30px;">Uncompromising <span>Safety
+                        Standards.</span></h2>
+                <p data-i18n="safety_desc"
+                    style="font-size: 1.2rem; color: var(--text-dim); max-width: 800px; margin: 0 auto;">
+                    Safety is our core foundation. Every machine in our fleet undergoes rigorous PDO inspections and
+                    international O&G certification audits.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple FAQ / Technical Specs list for SEO -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container tech-specs-grid"
+            style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; border-top: 1px solid var(--glass-border); padding-top: 60px;">
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 20px;">PDO COMPLIANCE</h4>
+                <p style="font-size: 0.9rem; color: var(--text-dim);">Full registration with Petroleum Development Oman
+                    (PDO) for all rental cranes, ensuring access to high-security energy zones.</p>
+            </div>
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 20px;">CERTIFIED RIGGERS</h4>
+                <p style="font-size: 0.9rem; color: var(--text-dim);">Our operators and riggers hold international
+                    certification for technical lifting and heavy load management.</p>
+            </div>
+            <div>
+                <h4 style="color: var(--primary); margin-bottom: 20px;">SPARE PARTS HUB</h4>
+                <p style="font-size: 0.9rem; color: var(--text-dim);">Dedicated warehouse support for SANY, Hyundai, and
+                    Kia equipment to minimize maintenance delays.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><img src="assets/logo.png" alt="SK TRANSPORTS"></a>
+                <p data-i18n="footer_desc">Elevating Oman’s infrastructure with unmatched lifting power. PDO-approved
+                    excellence since inception, bridging the gap between global sourcing and local expertise.</p>
+                <div class="social-links" style="margin-top: 30px;">
+                    <a href="https://www.facebook.com/profile.php?id=61588559220408" class="social-icon"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sk_transports_oman" class="social-icon" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@sktransportsoman" class="social-icon" target="_blank"><i
+                            class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-i18n="footer_links_title">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="fleet.html" data-i18n="nav_fleet">Fleet Portfolio</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="contact-us.html" data-i18n="nav_contact">Contact Us</a></li>
+                    <li><a href="blog/index.html" data-i18n="nav_blog">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 data-i18n="footer_contact_title">Contact Info</h4>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-text">
+                        <p data-i18n="footer_hq">Muscat Headquarters</p>
+                        <span data-i18n="footer_addr">Mabella Industrial Area, Oman</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-text">
+                        <p data-i18n="footer_hotline">Direct Hotline</p>
+                        <span data-i18n="phone_md">+968 9192 9375 (MD)</span>
+                        <span data-i18n="phone_ops">+968 9192 9355 (Ops)</span>
+                        <span data-i18n="phone_landline">+968 24 424537 (Landline)</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-text">
+                        <p data-i18n="footer_email">Official Email</p>
+                        <span>sktransportsoman@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 data-i18n="footer_sourcing_title">Direct Sourcing</h4>
+                <p style="font-size: 0.9rem; color: var(--text-dim); margin-bottom: 20px;"
+                    data-i18n="footer_sourcing_desc">Direct sourcing from China factory outlets for used and new heavy
+                    equipment procurement.</p>
+                <a href="https://wa.me/821055489938" class="btn-premium" data-i18n="footer_wa_inquiry">WhatsApp
+                    Inquiry</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer_rights">© 2026 SK Transports Oman. All Rights Reserved.</p>
+            <p data-i18n="footer_designed">Designed by M.Ahmed Sial</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/96891929375" class="floating-whatsapp" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <span data-i18n="floating_chat">Chat with us</span>
+    </a>
+
+    <div class="pdo-badge-new">
+        <div class="pdo-badge-inner">
+            <span data-i18n="badge_pdo">PDO</span>
+            <span style="font-size: 0.5rem; opacity: 0.7;" data-i18n="badge_certified">CERTIFIED</span>
+        </div>
+    </div>
+
+    <script src="js/main.js?v=2"></script>
+</body>
+
+</html>

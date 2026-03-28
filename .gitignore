@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Standard ignores
+node_modules/
+.npm
+.vscode/
+
+# Local build artifacts
+dist/
+build/
+.next/
+out/

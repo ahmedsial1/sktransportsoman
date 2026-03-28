@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | SK Transports - Crane Rental Oman Insights & Case Studies</title>
+    <meta name="description"
+        content="Explore SK Transports insights on heavy lifting, Sany crane rentals in Muscat, PDO compliance, and the latest infrastructure projects across Oman.">
+    <!-- Notice the ../ to go back to the root directory -->
+    <link rel="stylesheet" href="../styles/main.css?v=1.2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Updated Tajawal font included -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .blog-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .blog-img-stub {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid var(--primary);
+            font-size: 3rem;
+            color: var(--primary-glow);
+        }
+
+        .blog-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-date {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .blog-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            line-height: 1.4;
+            margin-bottom: 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .blog-title:hover {
+            color: var(--primary);
+        }
+
+        .blog-excerpt {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .read-more:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body class="bg-darker">
+    <!-- Top Ticker Bar -->
+    <div class="top-ticker">
+        <div class="ticker-content">
+            <div class="ticker-item" data-i18n="ticker_text">PDO Approved SANY Fleet | 18+ Years of Expertise | Direct
+                Sourcing from China | 24/7 Technical Support in Muscat, Sohar, Duqm & Salalah</div>
+            <div class="ticker-item" data-i18n="ticker_text">PDO Approved SANY Fleet | 18+ Years of Expertise | Direct
+                Sourcing from China | 24/7 Technical Support in Muscat, Sohar, Duqm & Salalah</div>
+        </div>
+    </div>
+
+    <nav id="main-nav">
+        <!-- Relative Path to Assets -->
+        <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="SK TRANSPORTS"></a>
+        <!-- Mobile Burger -->
+        <div class="mobile-burger" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="../fleet.html" data-i18n="nav_fleet">Fleet</a></li>
+            <li><a href="../services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="../about.html" data-i18n="nav_about">About Us</a></li>
+            <li><a href="index.html" class="active">Blog</a></li>
+            <li><a href="../contact-us.html" data-i18n="nav_contact">Contact Us</a></li>
+        </ul>
+        <div class="lang-selector-container">
+            <button class="lang-selector-btn" onclick="toggleLangMenu()">
+                <span id="active-flag">🇬🇧 EN</span>
+            </button>
+            <div class="lang-dropdown-content">
+                <a href="javascript:void(0)" onclick="setLanguage('en')">English (EN)</a>
+                <a href="javascript:void(0)" onclick="setLanguage('ar')">Arabic (AR)</a>
+                <a href="javascript:void(0)" onclick="setLanguage('zh')">Chinese (ZH)</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" style="min-height: 40vh; padding-top: 120px;">
+        <div class="hero-content">
+            <span class="hero-tagline">Insights & Case Studies</span>
+            <h1 class="hero-title">The SK Transports <span>Blog.</span></h1>
+            <p style="color: var(--text-dim); max-width: 800px; margin: 20px auto;">Latest news, heavy lifting best
+                practices, and expert advice for dominating Oman's infrastructure and energy sectors with SANY cranes.
+            </p>
+        </div>
+    </header>
+
+    <section class="section" style="padding-top: 50px;">
+        <div class="container" style="max-width: 1400px; margin: 0 auto;">
+
+            <div class="blog-grid">
+
+                <!-- Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-img-stub"><i class="fas fa-truck-pickup"></i></div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 2026 • Heavy Lifting</span>
+                        <a href="post-1.html" class="blog-title">Best Crane Rental Muscat Oman 2026: 20-100 Ton Capacity
+                            | SK Transports</a>
+                        <p class="blog-excerpt">The definitive guide to eradicating project delays in Muscat. Discover
+                            why our PDO-approved 20T - 100T SANY fleet is the ultimate lifting force.</p>
+                        <a href="post-1.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-img-stub"><i class="fas fa-hard-hat"></i></div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 2026 • Equipment Focus</span>
+                        <a href="post-2.html" class="blog-title">50 Ton Sany Crane for Rent in Muscat: PDO Approved |
+                            Daily/Weekly Rates</a>
+                        <p class="blog-excerpt">Struggling with medium-duty lifting? Learn how our highly reliable
+                            50-ton SANY truck and rough terrain cranes eliminate downtime constraints.</p>
+                        <a href="post-2.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-img-stub"><i class="fas fa-road"></i></div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 2026 • Logistics Strategy</span>
+                        <a href="post-3.html" class="blog-title">Mobile Crane Rental Muscat: Rough Terrain & Truck
+                            Mounted | SK Transports</a>
+                        <p class="blog-excerpt">Paved highways or deep desert oilfields? We break down the absolute
+                            critical differences between hiring a Truck vs. Rough Terrain crane in Oman.</p>
+                        <a href="post-3.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="blog-card">
+                    <div class="blog-img-stub"><i class="fas fa-shipping-fast"></i></div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 2026 • Sales & Procurement</span>
+                        <a href="post-4.html" class="blog-title">Sany Cranes Sales Oman: New/Used 25-200 Ton Models
+                            Available</a>
+                        <p class="blog-excerpt">Stop draining capital on perpetual rentals. Let SK Transports' CEO
+                            facilitate your direct factory acquisition of new or vetted used SANY cranes.</p>
+                        <a href="post-4.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="blog-card">
+                    <div class="blog-img-stub"><i class="fas fa-oil-well"></i></div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 2026 • Energy Sector</span>
+                        <a href="post-5.html" class="blog-title">PDO Crane Services Muscat: Oil & Gas Approved Heavy
+                            Lifting</a>
+                        <p class="blog-excerpt">Operating in PDO concession areas requires absolute safety compliance.
+                            See how our certified operators and SANY Rough Terrain fleet handle extreme oilfield
+                            operations.</p>
+                        <a href="post-5.html" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="SK TRANSPORTS"></a>
+                <p data-i18n="footer_desc">Elevating Oman’s infrastructure with unmatched lifting power. PDO-approved
+                    excellence since inception, bridging the gap between global sourcing and local expertise.</p>
+                <div class="social-links" style="margin-top: 30px;">
+                    <a href="https://www.facebook.com/profile.php?id=61588559220408" class="social-icon"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sk_transports_oman" class="social-icon" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@sktransportsoman" class="social-icon" target="_blank"><i
+                            class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-i18n="footer_links_title">Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="../fleet.html" data-i18n="nav_fleet">Fleet Portfolio</a></li>
+                    <li><a href="../services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="../about.html" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="../contact-us.html" data-i18n="nav_contact">Contact Us</a></li>
+                    <li><a href="index.html" data-i18n="nav_blog">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 data-i18n="footer_contact_title">Contact Info</h4>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-text">
+                        <p data-i18n="footer_hq">Muscat Headquarters</p>
+                        <span data-i18n="footer_addr">Mabella Industrial Area, Oman</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-text">
+                        <p data-i18n="footer_hotline">Direct Hotline</p>
+                        <span data-i18n="phone_md" dir="ltr">+968 9192 9375 (MD)</span>
+                        <span data-i18n="phone_ops" dir="ltr">+968 9192 9355 (Ops)</span>
+                        <span data-i18n="phone_landline" dir="ltr">+968 24 424537 (Landline)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 data-i18n="footer_sourcing_title">Direct Sourcing</h4>
+                <p style="font-size: 0.9rem; color: var(--text-dim); margin-bottom: 20px;"
+                    data-i18n="footer_sourcing_desc">Direct sourcing from China factory outlets for used and new heavy
+                    equipment procurement.</p>
+                <a href="https://wa.me/821055489938" class="btn-premium" data-i18n="footer_wa_inquiry">WhatsApp
+                    Inquiry</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer_rights">© 2026 SK Transports Oman. All Rights Reserved.</p>
+            <p data-i18n="footer_designed">Designed by M.Ahmed Sial</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/96891929375" class="floating-whatsapp" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <span data-i18n="floating_chat">Chat with us</span>
+    </a>
+
+    <!-- Relative Script path -->
+    <script src="../js/main.js?v=2"></script>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US | SK Transports - History, Leadership & Group Vision</title>
+    <link rel="stylesheet" href="styles/main.css?v=1.2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-darker">
+    <!-- Top Ticker Bar -->
+    <div class="top-ticker">
+        <div class="ticker-content">
+            <div class="ticker-item" data-i18n="ticker_text">PDO Approved SANY Fleet | 18+ Years of Expertise | Direct
+                Sourcing from China | 24/7 Technical Support in Muscat, Sohar, Duqm & Salalah</div>
+            <div class="ticker-item" data-i18n="ticker_text">PDO Approved SANY Fleet | 18+ Years of Expertise | Direct
+                Sourcing from China | 24/7 Technical Support in Muscat, Sohar, Duqm & Salalah</div>
+        </div>
+    </div>
+
+    <nav id="main-nav">
+        <a href="index.html" class="logo"><img src="assets/logo.png" alt="SK TRANSPORTS"></a>
+        <!-- Mobile Burger -->
+        <div class="mobile-burger" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="fleet.html" data-i18n="nav_fleet">Fleet</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="about.html" class="active" data-i18n="nav_about">About Us</a></li>
+            <li><a href="contact-us.html" data-i18n="nav_contact">Contact Us</a></li>
+        </ul>
+        <div class="lang-selector-container">
+            <button class="lang-selector-btn" onclick="toggleLangMenu()">
+                <span id="active-flag">🇬🇧 EN</span>
+            </button>
+            <div class="lang-dropdown-content">
+                <a href="javascript:void(0)" onclick="setLanguage('en')">English (EN)</a>
+                <a href="javascript:void(0)" onclick="setLanguage('ar')">Arabic (AR)</a>
+                <a href="javascript:void(0)" onclick="setLanguage('zh')">Chinese (ZH)</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="hero-tagline" data-i18n="about_legacy_tag">Our Legacy • Our Strength</span>
+            <h1 class="hero-title" data-i18n="about_future_title">Elevating <span>Oman's Future.</span></h1>
+            <p style="color: var(--text-dim); max-width: 800px; margin: 20px auto;" data-i18n="about_hero_desc">Discover
+                the foundation of our engineering excellence and our unmatched commitment to building Oman's industrial
+                landscape with precision and safety.</p>
+        </div>
+    </header>
+
+    <!-- Company Overview -->
+    <section class="section">
+        <div class="container about-overview-inner">
+            <div style="flex: 1; min-width: 350px;">
+                <h2 style="font-size: 3rem; font-weight: 900; margin-bottom: 30px;" data-i18n="about_conglom_title">A
+                    Conglomerate of <br><span style="color: var(--primary);">Industrial Excellence.</span></h2>
+                <p style="color: var(--text-dim); font-size: 1.1rem; line-height: 1.8;" data-i18n="about_conglom_desc">
+                    Founded on the principles of reliability and engineering precision, SK Transports has grown from a
+                    local rental service into a dominant industrial powerhouse in the Sultanate of Oman.
+                    <br><br>
+                    With over 18 branches strategically located across the country, we specialize in providing
+                    PDO-approved heavy lifting solutions, factory-direct equipment procurement from China, and
+                    specialized automotive spare parts.
+                </p>
+                <div class="mission-vision-grid">
+                    <div class="glass-card" style="padding: 20px;">
+                        <h4 style="color: var(--primary);" data-i18n="mission_title">Mission</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-dim);" data-i18n="mission_desc">To provide the
+                            safest, most efficient
+                            lifting solutions in Oman.</p>
+                    </div>
+                    <div class="glass-card" style="padding: 20px;">
+                        <h4 style="color: var(--primary);" data-i18n="vision_title">Vision</h4>
+                        <p style="font-size: 0.8rem; color: var(--text-dim);" data-i18n="vision_desc">To be the ultimate
+                            industrial backbone of
+                            the Middle East.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 350px; position: relative;">
+                <div class="glass-card" style="padding: 10px; transform: rotate(3deg);">
+                    <img src="assets/hero.png"
+                        style="width: 100%; border-radius: 15px; filter: grayscale(0.5) contrast(1.2);">
+                </div>
+                <!-- Experience Badge -->
+                <div class="experience-badge">
+                    <span style="font-size: 2.5rem; font-weight: 900; color: var(--bg-black);"
+                        data-i18n="exp_years">15+</span>
+                    <span style="font-size: 0.8rem; font-weight: 700; color: var(--bg-black);"
+                        data-i18n="exp_label">Years Exp.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership - New Visual Style -->
+    <section class="section" style="background: rgba(15, 23, 42, 0.4);">
+        <div class="container" style="max-width: 1400px; margin: 0 auto; text-align: center;">
+            <span class="hero-tagline" data-i18n="leadership_tag">Visionary Leadership</span>
+            <h2 style="font-size: 3.5rem; font-weight: 900; margin-bottom: 60px;" data-i18n="leadership_title">Strategic
+                <span>Excellence.</span>
+            </h2>
+
+            <div class="slider-container">
+                <div class="leadership-grid" id="leadership-slider">
+                    <!-- CEO Card -->
+                    <div class="glass-card"
+                        style="flex: 1; min-width: 300px; max-width: 450px; padding: 0; overflow: hidden; border-bottom: 5px solid var(--primary);">
+                        <div style="height: 400px; background: #1e293b; overflow: hidden; position: relative;">
+                            <img src="assets/ceo.png?v=7" alt="Muhammad Amjad - CEO"
+                                style="width: 100%; height: 100%; object-fit: cover; object-position: center 10%;">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, var(--bg-black), transparent);">
+                            </div>
+                        </div>
+                        <div style="padding: 40px;">
+                            <h3 style="font-size: 1.8rem; margin-bottom: 5px;" data-i18n="ceo_name">Muhammad Amjad</h3>
+                            <p style="color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 20px;"
+                                data-i18n="ceo_role">Chief Executive Officer</p>
+                            <p style="color: var(--text-dim); font-size: 0.95rem;" data-i18n="ceo_desc">The strategic
+                                mastermind behind global sourcing and expansion across 18+ branches in the Sultanate.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Chairman Card -->
+                    <div class="glass-card"
+                        style="flex: 1; min-width: 300px; max-width: 450px; padding: 0; overflow: hidden; border-bottom: 5px solid white;">
+                        <div style="height: 400px; background: #1e293b; overflow: hidden; position: relative;">
+                            <img src="assets/chairman.jpg.png?v=7" alt="Ch Munawar hussain Sial - Chairman"
+                                style="width: 100%; height: 100%; object-fit: cover; object-position: center 10%;">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, var(--bg-black), transparent);">
+                            </div>
+                        </div>
+                        <div style="padding: 40px;">
+                            <h3 style="font-size: 1.8rem; margin-bottom: 5px;" data-i18n="chairman_name">Ch Munawar
+                                hussain
+                                Sial</h3>
+                            <p style="color: #fff; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 20px;"
+                                data-i18n="chairman_role">Chairman</p>
+                            <p style="color: var(--text-dim); font-size: 0.95rem;" data-i18n="chairman_desc">Providing
+                                the
+                                foundational vision and governance that drives the high standards of the SK Transports
+                                group.</p>
+                        </div>
+                    </div>
+
+                    <!-- MD Card -->
+                    <div class="glass-card"
+                        style="flex: 1; min-width: 300px; max-width: 450px; padding: 0; overflow: hidden; border-bottom: 5px solid var(--secondary);">
+                        <div style="height: 400px; background: #1e293b; overflow: hidden; position: relative;">
+                            <img src="assets/md.jpg?v=7" alt="Ch Arshad Ali Sial - Managing Director"
+                                style="width: 100%; height: 100%; object-fit: cover; object-position: center 10%;">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, var(--bg-black), transparent);">
+                            </div>
+                        </div>
+                        <div style="padding: 40px;">
+                            <h3 style="font-size: 1.8rem; margin-bottom: 5px;" data-i18n="md_name">Ch Arshad Ali Sial
+                            </h3>
+                            <p style="color: var(--secondary); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 20px;"
+                                data-i18n="md_role">Managing Director</p>
+                            <p style="color: var(--text-dim); font-size: 0.95rem;" data-i18n="md_desc">A pioneer in the
+                                heavy machinery sector, driving the technical growth and operational excellence of the
+                                group.</p>
+                        </div>
+                    </div>
+
+                    <!-- MD 2 Card -->
+                    <div class="glass-card"
+                        style="flex: 1; min-width: 300px; max-width: 450px; padding: 0; overflow: hidden; border-bottom: 5px solid var(--primary);">
+                        <div style="height: 400px; background: #1e293b; overflow: hidden; position: relative;">
+                            <img src="assets/md2.jpg.jpeg?v=7" alt="Tasawar Hussain Sial - Managing Director"
+                                style="width: 100%; height: 100%; object-fit: cover; object-position: center 10%;">
+                            <div
+                                style="position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; background: linear-gradient(to top, var(--bg-black), transparent);">
+                            </div>
+                        </div>
+                        <div style="padding: 40px;">
+                            <h3 style="font-size: 1.8rem; margin-bottom: 5px;" data-i18n="md2_name">Tasawar Hussain Sial
+                            </h3>
+                            <p style="color: var(--primary); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 20px;"
+                                data-i18n="md2_role">Managing Director</p>
+                            <p style="color: var(--text-dim); font-size: 0.95rem;" data-i18n="md2_desc">Spearheading
+                                strategic partnerships and industrial innovations across our Oman and China nodes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Navigation Buttons -->
+                <div class="slider-nav">
+                    <div class="nav-btn" onclick="slideLeadership('prev')">❮</div>
+                    <div class="nav-btn" onclick="slideLeadership('next')">❯</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Group Strength -->
+    <section class="section">
+        <div class="container" style="max-width: 1400px; margin: 0 auto;">
+            <div class="glass-card"
+                style="padding: 80px; text-align: center; background: radial-gradient(circle at top right, var(--primary-glow), transparent);">
+                <h2 style="font-size: 3rem; margin-bottom: 20px;" data-i18n="about_parent_title">Parent Companies</h2>
+                <p style="color: var(--text-dim); max-width: 800px; margin: 0 auto 50px;" data-i18n="about_parent_desc">
+                    SK Transports operates as a proud sub-branch and specialized lifting division under the umbrella of
+                    our esteemed parent entities.</p>
+
+                <div class="group-companies-grid">
+                    <div
+                        style="padding: 30px; border-left: 3px solid var(--primary); background: rgba(255,255,255,0.02);">
+                        <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.1rem; line-height: 1.4;"
+                            data-i18n="comp1_title">Yahya Bin Khalfan Bin Mohammed Al Sayabi Modern Trading LLC</h3>
+                        <p style="color: var(--text-dim); font-size: 0.9rem;" data-i18n="comp1_desc">Specializing in
+                            Hyundai and Kia spare parts logistics, forming the backbone of heavy trading across Oman's
+                            industrial centers.</p>
+                    </div>
+                    <div
+                        style="padding: 30px; border-left: 3px solid var(--secondary); background: rgba(255,255,255,0.02);">
+                        <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.1rem; line-height: 1.4;"
+                            data-i18n="comp2_title">Sial Kingdom Trading L.L.C</h3>
+                        <p style="color: var(--text-dim); font-size: 0.9rem;" data-i18n="comp2_desc">Dealing in Hyundai
+                            and Kia spare parts alongside direct sourcing from China factory outlets for heavy equipment
+                            procurement.</p>
+                    </div>
+                    <div style="padding: 30px; border-left: 3px solid #3b82f6; background: rgba(255,255,255,0.02);">
+                        <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.1rem; line-height: 1.4;"
+                            data-i18n="comp3_title">Sial Auto Parts Company Limited (South Korea)</h3>
+                        <p style="color: var(--text-dim); font-size: 0.9rem;" data-i18n="comp3_desc">Our South Korean
+                            hub specializing in premium automotive components and direct supply chain management for
+                            Hyundai and Kia parts.</p>
+                    </div>
+                    <div style="padding: 30px; border-left: 3px solid #10b981; background: rgba(255,255,255,0.02);">
+                        <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.1rem; line-height: 1.4;"
+                            data-i18n="comp4_title">Yiwu Sial International Trading Company Limited (China)</h3>
+                        <p style="color: var(--text-dim); font-size: 0.9rem;" data-i18n="comp4_desc">The primary gateway
+                            for global industrial equipment sourcing, facilitating direct factory exports and heavy
+                            machinery logistics from China.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><img src="assets/logo.png" alt="SK TRANSPORTS"></a>
+                <p data-i18n="footer_desc">Elevating Oman’s infrastructure with unmatched lifting power. PDO-approved
+                    excellence since inception, bridging the gap between global sourcing and local expertise.</p>
+                <div class="social-links" style="margin-top: 30px;">
+                    <a href="https://www.facebook.com/profile.php?id=61588559220408" class="social-icon"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sk_transports_oman" class="social-icon" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@sktransportsoman" class="social-icon" target="_blank"><i
+                            class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-i18n="footer_links_title">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="fleet.html" data-i18n="nav_fleet">Fleet Portfolio</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="contact-us.html" data-i18n="nav_contact">Contact Us</a></li>
+                    <li><a href="blog/index.html" data-i18n="nav_blog">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 data-i18n="footer_contact_title">Contact Info</h4>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-text">
+                        <p data-i18n="footer_hq">Muscat Headquarters</p>
+                        <span data-i18n="footer_addr">Mabella Industrial Area, Oman</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-text">
+                        <p data-i18n="footer_hotline">Direct Hotline</p>
+                        <span data-i18n="phone_md">+968 9192 9375 (MD)</span>
+                        <span data-i18n="phone_ops">+968 9192 9355 (Ops)</span>
+                        <span data-i18n="phone_landline">+968 24 424537 (Landline)</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-text">
+                        <p data-i18n="footer_email">Official Email</p>
+                        <span>sktransportsoman@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 data-i18n="footer_sourcing_title">Direct Sourcing</h4>
+                <p style="font-size: 0.9rem; color: var(--text-dim); margin-bottom: 20px;"
+                    data-i18n="footer_sourcing_desc">Direct sourcing from China factory outlets for used and new heavy
+                    equipment procurement.</p>
+                <a href="https://wa.me/821055489938" class="btn-premium" data-i18n="footer_wa_inquiry">WhatsApp
+                    Inquiry</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer_rights">© 2026 SK Transports Oman. All Rights Reserved.</p>
+            <p data-i18n="footer_designed">Designed by M.Ahmed Sial</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/96891929375" class="floating-whatsapp" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <span data-i18n="floating_chat">Chat with us</span>
+    </a>
+
+    <script src="js/main.js?v=2"></script>
+</body>
+
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US | SK Transports - Get a Lifting Quote Today</title>
+    <link rel="stylesheet" href="styles/main.css?v=1.2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Ticker Bar -->
+    <div class="top-ticker">
+        <div class="ticker-content">
+            <div class="ticker-item" data-i18n="ticker_text">PDO Approved SANY Fleet | 18+ Years of Expertise | Direct
+                Sourcing from China | 24/7 Technical Support in Muscat, Sohar, Duqm & Salalah</div>
+            <div class="ticker-item" data-i18n="ticker_text">PDO Approved SANY Fleet | 18+ Years of Expertise | Direct
+                Sourcing from China | 24/7 Technical Support in Muscat, Sohar, Duqm & Salalah</div>
+        </div>
+    </div>
+
+    <nav id="main-nav">
+        <a href="index.html" class="logo"><img src="assets/logo.png" alt="SK TRANSPORTS"></a>
+        <!-- Mobile Burger -->
+        <div class="mobile-burger" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="fleet.html" data-i18n="nav_fleet">Fleet</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+            <li><a href="contact-us.html" class="active" data-i18n="nav_contact">Contact
+                    Us</a></li>
+        </ul>
+        <div class="lang-selector-container">
+            <button class="lang-selector-btn" onclick="toggleLangMenu()">
+                <span id="active-flag">🇬🇧 EN</span>
+            </button>
+            <div class="lang-dropdown-content">
+                <a href="javascript:void(0)" onclick="setLanguage('en')">English (EN)</a>
+                <a href="javascript:void(0)" onclick="setLanguage('ar')">Arabic (AR)</a>
+                <a href="javascript:void(0)" onclick="setLanguage('zh')">Chinese (ZH)</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="hero-tagline" data-i18n="contact_tagline">Project Consultation</span>
+            <h1 class="hero-title" data-i18n="contact_title">Contact <span>Us.</span></h1>
+            <p style="color: var(--text-dim); max-width: 800px; margin: 20px auto;" data-i18n="contact_desc">Ready to
+                elevate your infrastructure?
+                Our engineering team is standing by to provide PDO-approved lifting solutions anywhere in Oman and
+                manufacturing support from China.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container" style="max-width: 1400px; margin: 0 auto;">
+            <div class="contact-grid">
+
+                <!-- Contact Form Container -->
+                <div class="premium-form-container">
+                    <form id="contact-form" action="https://formspree.io/f/mgonozdk" method="POST">
+                        <div class="form-row">
+                            <div class="premium-input-group">
+                                <label data-i18n="form_full_name">Your Full Name</label>
+                                <input type="text" name="full_name" class="premium-input"
+                                    placeholder="e.g. Salim Al-Harthy" required>
+                            </div>
+                            <div class="premium-input-group">
+                                <label data-i18n="form_company">Company Name</label>
+                                <input type="text" name="company" class="premium-input" placeholder="e.g. PDO Oman"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="premium-input-group">
+                                <label data-i18n="form_email">Email Address</label>
+                                <input type="email" name="email" class="premium-input" placeholder="name@company.com"
+                                    required>
+                            </div>
+                            <div class="premium-input-group">
+                                <label data-i18n="form_phone">Phone Number</label>
+                                <input type="tel" name="phone" class="premium-input" placeholder="+968 9xxx xxxx"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="premium-input-group">
+                            <label data-i18n="form_tonnage">Required Tonnage & Equipment</label>
+                            <select name="tonnage" class="premium-input" style="appearance: none;">
+                                <option value="50-100T" data-i18n="form_ton_50_100">50 - 100 TON (Support)</option>
+                                <option value="130-200T" data-i18n="form_ton_130_200">130 - 200 TON (Industrial)
+                                </option>
+                                <option value="220-350T" data-i18n="form_ton_220_350">220 - 350 TON (Heavy Lift)
+                                </option>
+                                <option value="China-Sourcing" data-i18n="form_china_source">International Procurement
+                                    (Direct China Factory Outlets)</option>
+                            </select>
+                        </div>
+                        <div class="premium-input-group">
+                            <label data-i18n="form_message_label">Project Message</label>
+                            <textarea name="message" class="premium-input" rows="5"
+                                placeholder="Describe your site location and lifting requirements..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" class="btn-premium"
+                            style="width: 100%; font-size: 1rem; padding: 22px;" data-i18n="form_submit_btn">Send
+                            Professional Inquiry</button>
+
+                        <div id="form-status"
+                            style="display:none; margin-top: 20px; padding: 15px; border-radius: 10px; text-align: center; font-weight: 700;">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Details / Info -->
+                <div style="display: flex; flex-direction: column; gap: 30px;">
+                    <!-- Oman Card -->
+                    <div class="contact-card-v2">
+                        <span style="color: var(--primary); font-size: 1.5rem; display: block; margin-bottom: 15px;">📍
+                            Muscat HQ</span>
+                        <h3 style="margin-bottom: 10px;" data-i18n="oman_hq_title">Muscat Headquarters</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-dim); margin-bottom: 20px;"
+                            data-i18n="oman_hq_addr">Plot 142, Mabella
+                            Industrial Area,
+                            Muscat, Sultanate of Oman.</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <div class="contact-sub-item">
+                                <p style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase;"
+                                    data-i18n="md_label">
+                                    Managing Director (Ch Arshad Ali Sial)</p>
+                                <p style="font-size: 1.1rem; font-weight: 700;"><a href="tel:+96891929375"
+                                        style="color: inherit; text-decoration: none;" data-i18n="phone_md">+968 9192
+                                        9375</a></p>
+                            </div>
+                            <div class="contact-sub-item">
+                                <p style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase;"
+                                    data-i18n="team_ops_label">
+                                    Team & Operations</p>
+                                <p style="font-size: 1.1rem; font-weight: 700;"><a href="tel:+96891929355"
+                                        style="color: inherit; text-decoration: none;" data-i18n="phone_ops">+968 9192
+                                        9355</a></p>
+                                <p style="font-size: 1.1rem; font-weight: 700;"><a href="tel:+96874109000"
+                                        style="color: inherit; text-decoration: none;" data-i18n="phone_ops_2">+968 7410
+                                        9000</a></p>
+                            </div>
+                            <div class="contact-sub-item">
+                                <p style="font-size: 0.8rem; color: var(--primary); font-weight: 700; text-transform: uppercase;"
+                                    data-i18n="landline_label">
+                                    Landline Office</p>
+                                <p style="font-size: 1.1rem; font-weight: 700;"><a href="tel:+96824424537"
+                                        style="color: inherit; text-decoration: none;" data-i18n="phone_landline">+968
+                                        24 424537</a></p>
+                            </div>
+                            <div class="contact-sub-item">
+                                <p style="font-size: 0.8rem; color: var(--text-dim);"><strong
+                                        data-i18n="official_email_label">Official Email:</strong>
+                                    sktransportsoman@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- China Card -->
+                    <div class="contact-card-v2" style="border-color: var(--secondary);">
+                        <span style="color: var(--secondary); font-size: 1.5rem; display: block; margin-bottom: 15px;"
+                            data-i18n="china_card_title">
+                            Yiwu Sial International (China)</span>
+                        <h3 style="margin-bottom: 10px;" data-i18n="china_card_company">Yiwu Sial International Trading
+                            Company Limited</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-dim); margin-bottom: 20px;"
+                            data-i18n="china_card_address">International Trade
+                            Center Office, Zhejiang, China.</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <div class="contact-sub-item">
+                                <p style="font-size: 0.8rem; color: var(--secondary); font-weight: 700; text-transform: uppercase;"
+                                    data-i18n="china_card_source">
+                                    Direct Sourcing (CEO Muhammad Amjad)</p>
+
+                                <div
+                                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px; margin-top: 15px;">
+                                    <!-- WhatsApp Block -->
+                                    <div style="text-align: center;">
+                                        <div
+                                            style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 10px;">
+                                            <i class="fab fa-whatsapp" style="color: #25d366; font-size: 1.2rem;"></i>
+                                            <a href="https://wa.me/821055489938" target="_blank"
+                                                style="color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9rem;"
+                                                dir="ltr">+82
+                                                10 5548 9938</a>
+                                        </div>
+                                        <div class="qr-preview"
+                                            style="display: block; opacity: 1; visibility: visible; position: static; transform: none; margin: 0 auto; width: 130px; padding: 10px;">
+                                            <img src="assets/wa-qr.png" alt="WhatsApp QR">
+                                            <span
+                                                style="font-size: 0.6rem; color: #000; display: block; margin-top: 5px; font-weight: 800;">WHATSAPP
+                                                SCAN</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- WeChat Block -->
+                                    <div style="text-align: center;">
+                                        <div
+                                            style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 10px;">
+                                            <i class="fab fa-weixin" style="color: #07c160; font-size: 1.2rem;"></i>
+                                            <span
+                                                style="color: var(--text-dim); font-size: 0.8rem; font-weight: 700;">ID:
+                                                Sialautoparts</span>
+                                        </div>
+                                        <div class="qr-preview"
+                                            style="display: block; opacity: 1; visibility: visible; position: static; transform: none; margin: 0 auto; width: 130px; padding: 10px;">
+                                            <img src="assets/wechat-qr.png" alt="WeChat QR">
+                                            <span
+                                                style="font-size: 0.6rem; color: #000; display: block; margin-top: 5px; font-weight: 800;">WECHAT
+                                                SCAN</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 20px;"
+                                    data-i18n="china_card_email">
+                                    <strong>Email:</strong> ansarsial@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- South Korea Card -->
+                    <div class="contact-card-v2" style="border-color: #3b82f6;">
+                        <span style="color: #3b82f6; font-size: 1.5rem; display: block; margin-bottom: 15px;"
+                            data-i18n="korea_card_title">
+                            Sial Auto Parts (South Korea)</span>
+                        <h3 style="margin-bottom: 10px;" data-i18n="korea_card_company">Sial Auto Parts Company Limited
+                        </h3>
+                        <p style="font-size: 0.95rem; color: var(--text-dim); margin-bottom: 20px;"
+                            data-i18n="korea_card_address">Ansan-si, Gyeonggi-do, South Korea.</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <div class="contact-sub-item">
+                                <p style="font-size: 0.8rem; color: #3b82f6; font-weight: 700; text-transform: uppercase;"
+                                    data-i18n="korea_card_source">
+                                    Direct Sourcing (CEO Muhammad Amjad)</p>
+
+                                <div
+                                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px; margin-top: 15px;">
+                                    <!-- WhatsApp Block (Korea Card) -->
+                                    <div style="text-align: center;">
+                                        <div
+                                            style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 10px;">
+                                            <i class="fab fa-whatsapp" style="color: #25d366; font-size: 1.2rem;"></i>
+                                            <a href="https://wa.me/821055489938" target="_blank"
+                                                style="color: #fff; text-decoration: none; font-weight: 700; font-size: 0.9rem;"
+                                                dir="ltr">+82
+                                                10 5548 9938</a>
+                                        </div>
+                                        <div class="qr-preview"
+                                            style="display: block; opacity: 1; visibility: visible; position: static; transform: none; margin: 0 auto; width: 130px; padding: 10px;">
+                                            <img src="assets/wa-qr.png" alt="WhatsApp QR">
+                                            <span
+                                                style="font-size: 0.6rem; color: #000; display: block; margin-top: 5px; font-weight: 800;">WHATSAPP
+                                                SCAN</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- WeChat Block (Korea Card) -->
+                                    <div style="text-align: center;">
+                                        <div
+                                            style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 10px;">
+                                            <i class="fab fa-weixin" style="color: #07c160; font-size: 1.2rem;"></i>
+                                            <span
+                                                style="color: var(--text-dim); font-size: 0.8rem; font-weight: 700;">ID:
+                                                Sialautoparts</span>
+                                        </div>
+                                        <div class="qr-preview"
+                                            style="display: block; opacity: 1; visibility: visible; position: static; transform: none; margin: 0 auto; width: 130px; padding: 10px;">
+                                            <img src="assets/wechat-qr.png" alt="WeChat QR">
+                                            <span
+                                                style="font-size: 0.6rem; color: #000; display: block; margin-top: 5px; font-weight: 800;">WECHAT
+                                                SCAN</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 20px;"
+                                    data-i18n="china_card_email">
+                                    <strong>Email:</strong> ansarsial@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team WhatsApp -->
+                    <a href="https://wa.me/96891929375" class="glass-card"
+                        style="display: flex; align-items: center; gap: 20px; padding: 25px; text-decoration: none; background: rgba(37, 211, 102, 0.05); border-color: #25d366;">
+                        <div style="font-size: 2rem;">💬</div>
+                        <div>
+                            <h4 style="color: #fff;">Oman WhatsApp</h4>
+                            <p style="font-size: 0.8rem; color: #25d366;">Operations: +968 9192 9375</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container" style="max-width: 1400px; margin: 0 auto;">
+            <div class="map-container-v2">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.7667419028626!2d58.0981768!3d23.6485232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8de7dd384303e9%3A0x16a9671c8664a097!2sSial%20Kingdom%20Trading%20LLC!5e0!3m2!1sen!2som!4v1772908938408!5m2!1sen!2som"
+                    width="100%" height="450" style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(0.8);"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><img src="assets/logo.png" alt="SK TRANSPORTS"></a>
+                <p data-i18n="footer_desc">Elevating Oman’s infrastructure with unmatched lifting power. PDO-approved
+                    excellence since inception, bridging the gap between global sourcing and local expertise.</p>
+                <div class="social-links" style="margin-top: 30px;">
+                    <a href="https://www.facebook.com/profile.php?id=61588559220408" class="social-icon"
+                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/sk_transports_oman" class="social-icon" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@sktransportsoman" class="social-icon" target="_blank"><i
+                            class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-i18n="footer_links_title">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="fleet.html" data-i18n="nav_fleet">Fleet Portfolio</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                    <li><a href="contact-us.html" data-i18n="nav_contact">Contact Us</a></li>
+                    <li><a href="blog/index.html" data-i18n="nav_blog">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 data-i18n="footer_contact_title">Contact Info</h4>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-text">
+                        <p data-i18n="footer_hq">Muscat Headquarters</p>
+                        <span data-i18n="footer_addr">Mabella Industrial Area, Oman</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-text">
+                        <p data-i18n="footer_hotline">Direct Hotline</p>
+                        <span data-i18n="phone_md">+968 9192 9375 (MD)</span>
+                        <span data-i18n="phone_ops">+968 9192 9355 (Ops)</span>
+                        <span data-i18n="phone_landline">+968 24 424537 (Landline)</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-text">
+                        <p data-i18n="footer_email">Official Email</p>
+                        <span>sktransportsoman@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4 data-i18n="footer_sourcing_title">Direct Sourcing</h4>
+                <p style="font-size: 0.9rem; color: var(--text-dim); margin-bottom: 20px;"
+                    data-i18n="footer_sourcing_desc">Direct sourcing from China factory outlets for used and new heavy
+                    equipment procurement.</p>
+                <a href="https://wa.me/821055489938" class="btn-premium" data-i18n="footer_wa_inquiry">WhatsApp
+                    Inquiry</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer_rights">© 2026 SK Transports Oman. All Rights Reserved.</p>
+            <p data-i18n="footer_designed">Designed by M.Ahmed Sial</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/96891929375" class="floating-whatsapp" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <span data-i18n="floating_chat">Chat with us</span>
+    </a>
+
+    <script src="js/main.js?v=2"></script>
+</body>
+
+</html>
