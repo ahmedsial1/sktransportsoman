@@ -276,8 +276,8 @@ const translations = {
         
         blog_title_1: "Best Crane Rental in Oman: 20 to 100 Ton Capacity",
         blog_excerpt_1: "SK Transports offers crane rental and direct sales across Oman with 20 to 100 ton SANY mobile truck cranes and rough terrain cranes for all project needs.",
-        blog_title_2: "50 Ton Sany Crane for Rent in Muscat: PDO Approved | Daily/Weekly Rates",
-        blog_excerpt_2: "Struggling with medium-duty lifting? Learn how our highly reliable 50-ton SANY truck and rough terrain cranes eliminate downtime constraints.",
+        blog_title_2: "50 Ton Sany Crane for Rent in Oman",
+        blog_excerpt_2: "SK Transports provides reliable crane rental in Oman with 50 ton Sany crane services for construction, industrial, logistics, and heavy lifting projects.",
         blog_title_3: "Mobile Crane Rental Muscat: Rough Terrain & Truck Mounted | SK Transports",
         blog_excerpt_3: "Paved highways or deep desert oilfields? We break down the absolute critical differences between hiring a Truck vs. Rough Terrain crane in Oman.",
         blog_title_4: "Sany Cranes Sales Oman: New/Used 25-200 Ton Models Available",
@@ -522,8 +522,8 @@ ar: {
         
         blog_title_1: "أفضل تأجير رافعات في عمان: سعة 20 إلى 100 طن",
         blog_excerpt_1: "تقدم إس كيه للنقليات خدمات تأجير وبيع الرافعات في جميع أنحاء عمان مع رافعات ساني المتنقلة والرافعات المخصصة للتضاريس الوعرة بقدرات من 20 إلى 100 طن.",
-        blog_title_2: "رافعة ساني 50 طن للإيجار في مسقط: معتمدة من PDO | أسعار يومية وأسبوعية",
-        blog_excerpt_2: "هل تعاني من قيود الرفع متوسطة الأحمال؟ تعرف على كيف تقضي رافعاتنا ساني 50 طن على قيود التوقف.",
+        blog_title_2: "رافعة ساني 50 طن للإيجار في عمان",
+        blog_excerpt_2: "تقدم إس كيه للنقليات تأجير رافعات موثوقة في جميع أنحاء عمان مع رافعات ساني 50 طن لمشاريع البناء والصناعة والرفع الثقيل.",
         blog_title_3: "تأجير الرافعات المتنقلة مسقط: تضاريس وعرة وشاحنات | إس كيه للنقليات",
         blog_excerpt_3: "طرق سريعة أم حقول نفط صحراوية؟ نوضح الاختلافات الجوهرية بين استئجار رافعة شاحنة مقابل رافعة تضاريس وعرة.",
         blog_title_4: "مبيعات رافعات ساني عمان: موديلات 25-200 طن جديدة ومستعملة",
@@ -767,8 +767,8 @@ ar: {
         
         blog_title_1: "阿曼最佳起重机租赁：20 至 100 吨容量",
         blog_excerpt_1: "SK Transports 在阿曼各地提供 20 到 100 吨三一汽车起重机和越野起重机的租赁和销售服务，满足所有项目需求。",
-        blog_title_2: "马斯喀特 50 吨三一起重机租赁：PDO 认证 | 日租/周租费率",
-        blog_excerpt_2: "正在为中型吊装发愁？了解我们高度可靠的三一 50 吨汽车和越野起重机如何消除停机限制。",
+        blog_title_2: "阿曼 50 吨三一起重机租赁",
+        blog_excerpt_2: "SK Transports 在阿曼各地提供 50 吨三一汽车起重机和越野起重机的租赁服务，满足建筑、工业等项目的所有起重需求。",
         blog_title_3: "马斯喀特移动式起重机租赁：越野型与车载型 | SK Transports",
         blog_excerpt_3: "公路作业还是沙漠油田？我们为您详细解析在阿曼租用汽车起重机与越野起重机的关键区别。",
         blog_title_4: "阿曼三一起重机销售：现货 25-200 吨全新/二手型号",
