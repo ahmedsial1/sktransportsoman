@@ -1,6 +1,12 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/crane-rental-oman",
+      "destination": "/blog/crane-rental-oman.html"
+    }
+  ],
   "redirects": [
     {
       "source": "/post-(.*)",
