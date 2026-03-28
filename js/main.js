@@ -274,8 +274,8 @@ const translations = {
         form_success: "Thank you! Your inquiry has been sent to our HQ. We will contact you shortly.",
         form_error: "Submission Error! Please try sending your inquiry directly via <a href='https://wa.me/96891929375' style='color:inherit; text-decoration:underline;'>WhatsApp (+968 9192 9375)</a> for immediate assistance.",
         
-        blog_title_1: "Best Crane Rental Muscat Oman 2026: 20-100 Ton Capacity | SK Transports",
-        blog_excerpt_1: "The definitive guide to eradicating project delays in Muscat. Discover why our PDO-approved 20T - 100T SANY fleet is the ultimate lifting force.",
+        blog_title_1: "Best Crane Rental in Oman: 20 to 100 Ton Capacity",
+        blog_excerpt_1: "SK Transports offers crane rental and direct sales across Oman with 20 to 100 ton SANY mobile truck cranes and rough terrain cranes for all project needs.",
         blog_title_2: "50 Ton Sany Crane for Rent in Muscat: PDO Approved | Daily/Weekly Rates",
         blog_excerpt_2: "Struggling with medium-duty lifting? Learn how our highly reliable 50-ton SANY truck and rough terrain cranes eliminate downtime constraints.",
         blog_title_3: "Mobile Crane Rental Muscat: Rough Terrain & Truck Mounted | SK Transports",
@@ -520,8 +520,8 @@ ar: {
         form_success: "شكراً لك! تم إرسال استفسارك إلى مقرنا الرئيسي. سنتصل بك قريباً.",
         form_error: "خطأ في الإرسال! يرجى محاولة إرسال استفسارك مباشرة عبر <a href='https://wa.me/96891929375' style='color:inherit; text-decoration:underline;'>واتساب (+968 9192 9375)</a> للمساعدة الفورية.",
         
-        blog_title_1: "أفضل تأجير کرينات في مسقط عمان 2026: سعة 20-100 طن | إس كيه للنقليات",
-        blog_excerpt_1: "الدليل النهائي للقضاء على تأخيرات المشاريع في مسقط. اكتشف لماذا يعتبر أسطول ساني المعتمد من PDO هو القوة القصوى.",
+        blog_title_1: "أفضل تأجير رافعات في عمان: سعة 20 إلى 100 طن",
+        blog_excerpt_1: "تقدم إس كيه للنقليات خدمات تأجير وبيع الرافعات في جميع أنحاء عمان مع رافعات ساني المتنقلة والرافعات المخصصة للتضاريس الوعرة بقدرات من 20 إلى 100 طن.",
         blog_title_2: "رافعة ساني 50 طن للإيجار في مسقط: معتمدة من PDO | أسعار يومية وأسبوعية",
         blog_excerpt_2: "هل تعاني من قيود الرفع متوسطة الأحمال؟ تعرف على كيف تقضي رافعاتنا ساني 50 طن على قيود التوقف.",
         blog_title_3: "تأجير الرافعات المتنقلة مسقط: تضاريس وعرة وشاحنات | إس كيه للنقليات",
@@ -765,8 +765,8 @@ ar: {
         form_success: "谢谢！您的咨询已发送至我们的总部。我们将很快与您联系。",
         form_error: "提交错误！请尝试通过 <a href='https://wa.me/96891929375' style='color:inherit; text-decoration:underline;'>WhatsApp (+968 9192 9375)</a> 直接发送您的询问，以便获得即时反馈。",
         
-        blog_title_1: "2026年阿曼马斯喀特最佳起重机租赁：20-100 吨载荷 | SK Transports",
-        blog_excerpt_1: "消除马斯喀特项目延误的最终指南。了解为什么我们获得 PDO 认证的 20T-100T 三一车队是核心起重力量。",
+        blog_title_1: "阿曼最佳起重机租赁：20 至 100 吨容量",
+        blog_excerpt_1: "SK Transports 在阿曼各地提供 20 到 100 吨三一汽车起重机和越野起重机的租赁和销售服务，满足所有项目需求。",
         blog_title_2: "马斯喀特 50 吨三一起重机租赁：PDO 认证 | 日租/周租费率",
         blog_excerpt_2: "正在为中型吊装发愁？了解我们高度可靠的三一 50 吨汽车和越野起重机如何消除停机限制。",
         blog_title_3: "马斯喀特移动式起重机租赁：越野型与车载型 | SK Transports",
