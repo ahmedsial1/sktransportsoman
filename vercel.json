@@ -1,16 +1,30 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/crane-rental-oman",
-      "destination": "/blog/crane-rental-oman.html"
-    }
-  ],
   "redirects": [
     {
-      "source": "/post-(.*)",
-      "destination": "/blog/post-$1",
+      "source": "/blog/post-1(\\.html)?",
+      "destination": "/crane-rental-oman",
+      "permanent": true
+    },
+    {
+      "source": "/blog/post-2(\\.html)?",
+      "destination": "/50-ton-sany-crane-rent-oman",
+      "permanent": true
+    },
+    {
+      "source": "/blog/post-3(\\.html)?",
+      "destination": "/mobile-crane-rental-muscat",
+      "permanent": true
+    },
+    {
+      "source": "/blog/post-4(\\.html)?",
+      "destination": "/sany-cranes-sales-oman",
+      "permanent": true
+    },
+    {
+      "source": "/blog/post-5(\\.html)?",
+      "destination": "/pdo-crane-services-muscat",
       "permanent": true
     }
   ]
