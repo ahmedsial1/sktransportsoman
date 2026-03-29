@@ -1,97 +1,91 @@
 import os
 import re
 
-html_files = [
-    'index.html', 'about.html', 'services.html', 'fleet.html', 'contact-us.html',
-    'crane-rental-oman.html', '50-ton-sany-crane-rent-oman.html', 'mobile-crane-rental-muscat.html',
-    'sany-cranes-sales-oman.html', 'pdo-crane-services-muscat.html',
-    'blog/index.html'
+blogs = [
+    {
+        "slug": "truck-mobile-crane-rental-muscat",
+        "title": "Truck Mobile Crane Rental in Muscat | SK Transports",
+        "desc": "Looking for truck mobile crane rental in Muscat? SK Transports provides reliable lifting services with SANY cranes for construction and industrial projects.",
+        "icon": "fas fa-truck-loading"
+    },
+    {
+        "slug": "50-ton-crane-for-rent-muscat-oman",
+        "title": "50 Ton Crane for Rent in Muscat | PDO Approved",
+        "desc": "Get the best 50 ton crane for rent in Muscat. SK Transports offers PDO approved crane rental in Oman with experienced operators and premium SANY machinery.",
+        "icon": "fas fa-hard-hat"
+    },
+    {
+        "slug": "best-mobile-crane-services-oman",
+        "title": "Best Mobile Crane Services in Oman",
+        "desc": "Discover the best mobile crane services in Oman. SK Transports delivers heavy lifting solutions, reliable SANY machinery, and 24/7 support nationwide.",
+        "icon": "fas fa-tools"
+    },
+    {
+        "slug": "pdo-approved-crane-rental-oman",
+        "title": "PDO Approved Crane Rental in Oman",
+        "desc": "SK Transports provides PDO approved crane rental in Oman. Rent top-tier SANY mobile cranes with certified operators for oil and gas sector projects.",
+        "icon": "fas fa-check-shield"
+    },
+    {
+        "slug": "crane-rental-and-sales-muscat",
+        "title": "Crane Rental and Sales in Muscat",
+        "desc": "Need crane rental and sales in Muscat? SK Transports offers 20 to 100 ton cranes for rent or direct purchase from China. Contact us today.",
+        "icon": "fas fa-handshake"
+    }
 ]
 
-replacements = {
-    'href="index.html"': 'href="/"',
-    'href="../index.html"': 'href="/"',
-    'href="about.html"': 'href="/about"',
-    'href="../about.html"': 'href="/about"',
-    'href="services.html"': 'href="/services"',
-    'href="../services.html"': 'href="/services"',
-    'href="fleet.html"': 'href="/fleet"',
-    'href="../fleet.html"': 'href="/fleet"',
-    'href="contact-us.html"': 'href="/contact-us"',
-    'href="../contact-us.html"': 'href="/contact-us"',
-    'href="blog/index.html"': 'href="/blog"',
-    'href="../blog/index.html"': 'href="/blog"',
-    'href="crane-rental-oman.html"': 'href="/crane-rental-oman"',
-    'href="../crane-rental-oman.html"': 'href="/crane-rental-oman"',
-    'href="50-ton-sany-crane-rent-oman.html"': 'href="/50-ton-sany-crane-rent-oman"',
-    'href="../50-ton-sany-crane-rent-oman.html"': 'href="/50-ton-sany-crane-rent-oman"',
-    'href="mobile-crane-rental-muscat.html"': 'href="/mobile-crane-rental-muscat"',
-    'href="../mobile-crane-rental-muscat.html"': 'href="/mobile-crane-rental-muscat"',
-    'href="sany-cranes-sales-oman.html"': 'href="/sany-cranes-sales-oman"',
-    'href="../sany-cranes-sales-oman.html"': 'href="/sany-cranes-sales-oman"',
-    'href="pdo-crane-services-muscat.html"': 'href="/pdo-crane-services-muscat"',
-    'href="../pdo-crane-services-muscat.html"': 'href="/pdo-crane-services-muscat"'
-}
-
-def add_canonical_tag(content, filename):
-    # Determine canonical path
-    if filename == 'index.html':
-        canonical_url = 'https://sktransportsoman.com/'
-    elif filename == 'blog/index.html':
-        canonical_url = 'https://sktransportsoman.com/blog'
-    else:
-        name = os.path.basename(filename).replace('.html', '')
-        canonical_url = f'https://sktransportsoman.com/{name}'
-        
-    canonical_tag = f'<link rel="canonical" href="{canonical_url}" />'
+# 1. Update blog/index.html
+blog_index = "blog/index.html"
+if os.path.exists(blog_index):
+    with open(blog_index, 'r', encoding='utf-8') as f:
+        content = f.read()
     
-    # If already has canonical, replace it
-    if '<link rel="canonical"' in content:
-        content = re.sub(r'<link rel="canonical" href="[^"]+" />', canonical_tag, content)
-    else:
-        # Insert before </head>
-        content = content.replace('</head>', f'    {canonical_tag}\n</head>')
-        
-    return content
-
-# Also standardizing asset paths to start from root so they work seamlessly with/without trailing slashes
-def normalize_assets(content):
-    content = content.replace('href="../styles/', 'href="/styles/')
-    content = content.replace('href="styles/', 'href="/styles/')
-    content = content.replace('src="../assets/', 'src="/assets/')
-    content = content.replace('src="assets/', 'src="/assets/')
-    content = content.replace('src="../js/', 'src="/js/')
-    content = content.replace('src="js/', 'src="/js/')
+    # We want to insert the 5 cards inside <div class="blog-grid">
+    # Let's find the closing tag of blog-grid. It's roughly line 225.
+    # Actually, simpler way: find the last </article> inside blog-grid, and append after it.
     
-    # But wait, href="https://..." should not be touched. The above replaces are safe.
-    
-    # Also fix some blog specific links if needed
-    content = content.replace('href="index.html"', 'href="/blog"') # wait, we already did replacements. This is too dangerous, skip asset normalizing this way, only for known patterns
-    return content
+    html_cards = ""
+    for b in blogs:
+        html_cards += f'''
+                <!-- New Post -->
+                <article class="blog-card">
+                    <div class="blog-img-stub"><i class="{b['icon']}"></i></div>
+                    <div class="blog-content">
+                        <span class="blog-date">March 2026 • Oman Lifting</span>
+                        <a href="/{b['slug']}" class="blog-title">{b['title']}</a>
+                        <p class="blog-excerpt">{b['desc']}</p>
+                        <a href="/{b['slug']}" class="read-more"><span>Read Full Article</span> <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+'''
+    content = content.replace('<!-- Map Section -->', f'<!-- End of Old Grid Items -->{html_cards}\n    <!-- Map Section -->')
+    # wait, Map Section is outside blog-grid. 
+    # Let's look for <section class="section" style="padding-top: 0;"> (the Map Section).
+    # The grid closing div happens before the Map section.
+    # Let's just do a regex replace to insert at the end of the blog-grid:
+    content = re.sub(r'(</article>\s*)(</div>\s*</section>\s*<!-- Map Section -->)', r'\1' + html_cards + r'\2', content)
 
-for file in html_files:
-    if os.path.exists(file):
-        with open(file, 'r', encoding='utf-8') as f:
-            content = f.read()
-            
-        # apply replacements
-        for key, val in replacements.items():
-            content = content.replace(key, val)
-            
-        content = add_canonical_tag(content, file)
+    with open(blog_index, 'w', encoding='utf-8') as f:
+        f.write(content)
         
-        # safely normalize assets explicitly
-        content = content.replace('href="../styles/main.css', 'href="/styles/main.css')
-        content = content.replace('href="styles/main.css', 'href="/styles/main.css')
-        content = content.replace('src="../assets/logo.png', 'src="/assets/logo.png')
-        content = content.replace('src="assets/logo.png', 'src="/assets/logo.png')
-        content = content.replace('src="../assets/hero-bg.jpg', 'src="/assets/hero-bg.jpg')
-        content = content.replace('src="assets/hero-bg.jpg', 'src="/assets/hero-bg.jpg')
-        content = content.replace('src="../js/main.js', 'src="/js/main.js')
-        content = content.replace('src="js/main.js', 'src="/js/main.js')
-            
-        with open(file, 'w', encoding='utf-8') as f:
-            f.write(content)
-        print(f"Updated {file}")
-    else:
-        print(f"File not found: {file}")
+# 2. Update sitemap.xml
+sitemap = "sitemap.xml"
+if os.path.exists(sitemap):
+    with open(sitemap, 'r', encoding='utf-8') as f:
+        sm_content = f.read()
+        
+    xml_urls = ""
+    for b in blogs:
+        xml_urls += f'''  <url>
+    <loc>https://sktransportsoman.com/{b['slug']}</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+'''
+    sm_content = sm_content.replace('</urlset>', f'{xml_urls}</urlset>')
+    
+    with open(sitemap, 'w', encoding='utf-8') as f:
+        f.write(sm_content)
+
+print("Blog update complete.")
